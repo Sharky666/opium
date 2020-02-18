@@ -10,7 +10,7 @@ public class Player extends Entity {
     float xMoveDistance = (float) 11;
     float yMoveDistance = (float) 9.5;
     public Player() {
-        super(BodyDef.BodyType.StaticBody);
+        super(BodyDef.BodyType.DynamicBody);
         setTexture(new Texture("characters/Adventurer-1.5/Individual-Sprites/adventurer-idle-00.png"));
         //add keyboard listeners
         //keyboardEventListener.addListener(Input.Keys.A, this::moveLeft);

@@ -60,7 +60,6 @@ public class Entity {
 
     public BodyDef getBodyDef() {
         bodyDef.type = this.getBodyType();
-        bodyDef.position.set(sprite.getX(), sprite.getY());
         return this.bodyDef;
     }
 
