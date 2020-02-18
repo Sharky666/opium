@@ -80,8 +80,7 @@ public class Entity {
         //mass
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = shape;
-        fixtureDef.density = 1f;
-        fixtureDef.density = 0;
+        fixtureDef.density = 0.35f / 200;
         return fixtureDef;
     }
 

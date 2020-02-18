@@ -32,7 +32,6 @@ public class Opium extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		this.currentScreen.render(batch);
-		keyboardEventHandler();
 		batch.end();
 	}
 	
@@ -40,19 +39,5 @@ public class Opium extends ApplicationAdapter {
 	public void dispose () {
 		batch.dispose();
 		this.currentScreen.dispose();
-	}
-	private void keyboardEventHandler() {
-		if (Gdx.input.isKeyPressed(Input.Keys.A)) {
-			keyboardEventListener.runByKey(Input.Keys.A);
-		}
-		if (Gdx.input.isKeyPressed(Input.Keys.D)) {
-			keyboardEventListener.runByKey(Input.Keys.D);
-		}
-		if (Gdx.input.isKeyPressed(Input.Keys.W)) {
-			keyboardEventListener.runByKey(Input.Keys.W);
-		}
-		if (Gdx.input.isKeyPressed(Input.Keys.S)) {
-			keyboardEventListener.runByKey(Input.Keys.S);
-		}
 	}
 }
